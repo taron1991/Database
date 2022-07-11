@@ -1,3 +1,9 @@
+/*Написать SQL запросы:
+1. Вывести список всех машин и все привязанные к ним детали.
+2. Вывести отдельно детали, которые не используются в машине, кузова, двигатели, коробки передач. 
+*/
+
+
 create database cars;
 
 create table body(
@@ -36,7 +42,4 @@ select car.name,engine.engine from car left join engine on car.engine_id=engine.
 /*4 отсуствие КПП*/
 select car.name,gearbox.gearbox from car left join gearbox on car.gearbox_id=gearbox.id;
 
-/*Написать SQL запросы:
-1. Вывести список всех машин и все привязанные к ним детали.
-2. Вывести отдельно детали, которые не используются в машине, кузова, двигатели, коробки передач. */
-/*ser.gearbox_id=gearbox.id*/
+
